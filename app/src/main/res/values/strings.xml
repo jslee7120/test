@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Yaksok</string>
+    <string name="kakao_app_key">3c403b1278ec5abe4bfe699be6962daf</string>
+    <string name="app_title">소중한 사람의 건강을 위한 </string>
+    <string name="yaksok">약속</string>
+    <string name="login_btn_txt">로그인</string>
+    <string name="auto_login">자동 로그인 /</string>
+    <string name="find_id_or_pw">아이디 및 비밀번호 찾기</string>
+    <string name="sign_up">회원 가입</string>
+    <string name="sign_up_id">아이디 </string>
+    <string name="sign_up_pw">비밀번호</string>
+    <string name="sign_up_re_pw">비밀번호 확인</string>
+    <string name="sign_up_name">이름</string>
+    <string name="sign_up_email">이메일</string>
+    <string name="sign_up_age_range">연령대</string>
+    <string name="sign_up_profile">프로필 사진</string>
+    <string name="sign_up_birthday">생년 월일</string>
+    <string name="sign_up_phone">휴대폰 번호</string>
+    <string name="sign_up_confrim_id">아이디 확인</string>
+    <string name="sign_up_id_hint">아이디는 영문 6자리 이상</string>
+    <string name="sign_up_pw_hint">특수문자 포함(*,!)등 6자 이상 </string>
+    <string name="sign_up_confirm_pw">비밀번호 확인</string>
+    <string name="sign_up_re_pw_hint">재 확인</string>
+    <string name="sign_up_month">월</string>
+    <string name="sign_up_day">일</string>
+    <string name="sign_up_phone_numbers_hint">"-"를 제외하고 입력</string>
+    <string name="sign_up_confrim">확인</string>
+    <string name="sign_up_get_authorization">인증번호 받기</string>
+    <string name="sign_up_authorization_num">인증번호 입력</string>
+    <string name="sign_up_email_part">"@"</string>
+    <string name="sign_up_user_profile">프로필 사진 선택</string>
+    <string name="sign_up_completion">회원가입</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="drawer_1">로그아웃</string>
+    <string name="drawer_2">개인정보 수정</string>
+    <string name="drawer_3">결제 서비스</string>
+    <string name="drawer_4">알림음설정</string>
+
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="default_notification_channel_name" translatable="true">News</string>
+
+
+</resources>

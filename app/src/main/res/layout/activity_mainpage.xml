@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="459dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="189dp"
+            android:background="#5bc4c6"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp">
+                <TextView
+                    android:id="@+id/tv_main_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:text="두드림"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text=" 님"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="약 복용까지 남은 시간"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_main_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60dp"
+                    android:textColor="#FFFFFF"
+                    android:text="0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60dp"
+
+                    android:textColor="#FFFFFF"
+                    android:text="시간 "/>
+                <TextView
+                    android:id="@+id/tv_main_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60dp"
+                    android:textColor="#FFFFFF"
+                    android:text="00"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="60dp"
+                    android:textColor="#FFFFFF"
+                    android:text="분"/>
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/bt_Chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chatting"/>
+                <Button
+                    android:id="@+id/bt_InsertPill"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/my_medicine2" />
+                <Button
+                    android:id="@+id/bt_InsertFamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/family_add" />
+
+                <Button
+                    android:id="@+id/bt_Premium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/premium" />
+                <Button
+                    android:id="@+id/bt_Shopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shopping"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/banner"
+
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <AnalogClock
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp" 
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_Name"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="두드림님"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="다음 약 복용까지"/>
+            <TextView
+                android:id="@+id/tv_Time"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="1시간 29분 남았습니다"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

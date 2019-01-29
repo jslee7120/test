@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+   <!-- <TextView
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_user_profile"
+        android:textColor="#000000"/>
+    <ImageView
+        android:id="@+id/sign_profile_imv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user_profile"/>
+-->
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:text="하이라"
+                    android:textColorHint="#000000"
+                    android:layout_gravity="center"
+                    android:id="@+id/sign_name_edt"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="이름"
+                    android:textColor="#000000"
+                    android:focusable="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </TableRow>
+        <TableRow>
+
+                <EditText
+                    android:text="audwns1029"
+                    android:textColorHint="#000000"
+                    android:id="@+id/sign_id_edt"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sign_up_id_hint"
+                    android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/sign_check_id_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_confrim"
+                android:layout_marginStart="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                />
+        </TableRow>
+        <TableRow>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:text="audwns1029!"
+                    android:textColorHint="#000000"
+                    android:layout_gravity="center"
+                    android:id="@+id/sign_pw_edt"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sign_up_pw"
+                    android:textColor="#000000"
+                    android:focusable="true"
+                    android:inputType="textPassword"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </TableRow>
+        <TableRow>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textColorHint="#000000"
+                    android:layout_gravity="center"
+                    android:id="@+id/sign_re_pw_edt"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sign_up_re_pw_hint"
+                    android:textColor="#000000"
+                    android:focusable="true"
+                    android:inputType="textPassword"
+                    android:text="audwns1029!"/>
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/sign_up_check_pw_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/sign_up_confirm_pw"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"/>
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:layout_margin="5dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_birthday"/>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sign_year_spin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Spinner>
+
+
+                <Spinner
+                    android:id="@+id/sign_month_spin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Spinner>
+
+                <Spinner
+                    android:id="@+id/sign_day_spin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></Spinner>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sign_up_get_autho_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/sign_up_get_authorization"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/sign_up_phone"
+                android:textColor="#000000" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sign_up_phone_company_spin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:entries="@array/phone_company">
+
+                </Spinner>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/sign_phone_number_edt"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/sign_up_phone_numbers_hint"
+                        android:text="01090217325"
+                        android:textColorHint="#000000" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sign_authorization_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/sign_authorization_number"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/sign_up_authorization_num"
+                        android:textColorHint="#000000" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/sign_up_auth_confirm_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/sign_up_confrim"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="직접 입력" />
+
+                <EditText
+                    android:id="@+id/sign_email_yourself_edt"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:hint="abc123@naver.com"
+                    android:textColorHint="#000000" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/confirm_email_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이메일 확인" />
+
+        </LinearLayout>
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/sign_up_complete_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/sign_up_completion"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+

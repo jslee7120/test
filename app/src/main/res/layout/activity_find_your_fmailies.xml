@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/findFamily_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="가족분의 번호를 입력해주세요"/>
+    <Button
+        android:id="@+id/findFamily_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findFamily_edt"
+        android:text="가족 찾기"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@color/main_color"
+        android:layout_margin="3dp"/>
+
+
+
+    <ListView
+        android:id="@+id/family_list"
+        android:layout_below="@+id/findFamily_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_btns"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg">
+
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/linear_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/family_complete_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="완료"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@color/main_color"
+            android:layout_margin="3dp"/>
+        <Button
+            android:id="@+id/family_skip_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:text="스킵하기"
+            android:layout_above="@+id/family_skip_btn"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@color/main_color"
+            android:layout_margin="3dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

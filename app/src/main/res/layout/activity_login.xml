@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_weight="1">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/login_logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"/>
+
+
+
+
+
+      <LinearLayout
+          android:id="@+id/linear_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_gravity="center_horizontal"
+          android:orientation="vertical"
+          android:layout_marginTop="50dp">
+
+
+         <EditText
+             android:id="@+id/main_id_edt"
+             android:layout_width="300dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:hint="ID"
+             android:maxLength="20"
+             android:singleLine="true" />
+             <!--android:theme="@style/EditTheme" />-->
+
+
+         <EditText
+             android:id="@+id/main_pw_edt"
+             android:layout_width="300dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:hint="PW"
+             android:inputType="textPassword"
+             android:maxLength="20"
+             android:singleLine="true"/>
+             <!--android:textColorHint="@color/colorPrimaryDark"-->
+             <!--android:theme="@style/EditTheme" />-->
+      <LinearLayout
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_weight="1"
+          android:layout_gravity="center">
+
+         <CheckBox
+             android:id="@+id/setAutoLogin_check"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:checked="true"
+             android:text="로그인유지"
+             android:layout_weight="0.8"
+             android:textSize="10dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="0.2"
+             android:text="  아이디 찾기   비밀번호 찾기"
+             android:textSize="10dp"/>
+
+         <!--<LinearLayout-->
+             <!--android:layout_width="wrap_content"-->
+             <!--android:layout_height="wrap_content"-->
+             <!--android:layout_gravity="end"-->
+             <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="아이디 찾기 " />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="비밀번호 찾기 " />-->
+
+         <!--</LinearLayout>-->
+
+      </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="300dp"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_weight="1"
+             android:layout_gravity="center">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+               <ImageView
+                   android:id="@+id/fake_g_login"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/general_login"
+                   />
+
+               <Button
+                   android:id="@+id/login_normal_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="20dp"
+                   android:layout_gravity="center"
+                   android:layout_margin="5dp"
+                   android:background="#ffffff"
+                   android:text="@string/login_btn_txt"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textStyle="bold"
+                   android:visibility="invisible"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+               <ImageView
+                   android:id="@+id/fake_sign_up"
+                   android:layout_width="match_parent"
+                   android:layout_height="67dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/signup" />
+               <Button
+                   android:id="@+id/login_sign_up_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center"
+                   android:layout_margin="5dp"
+                   android:background="#ffffff"
+                   android:text="@string/sign_up"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textStyle="bold"
+                   android:layout_weight="1"
+                   android:visibility="invisible"/>
+
+            </FrameLayout>
+
+
+
+                </LinearLayout>
+
+         </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="75dp">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/frame_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/fake_id_n_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:src="@drawable/naver_login_btn" />
+
+                <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+                    android:id="@+id/login_naver_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/frame_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <!--android:layout_below="@id/frame_1">-->
+
+
+                <ImageView
+                    android:id="@+id/fake_k_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:src="@drawable/kakao_login" />
+
+                <com.kakao.usermgmt.LoginButton
+                    android:id="@+id/login_kakao_btn"
+                    android:layout_width="187dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible">
+
+                </com.kakao.usermgmt.LoginButton>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
+
+      </LinearLayout>
+
+
+

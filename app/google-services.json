@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "415379176174",
+    "firebase_url": "https://please-f96e5.firebaseio.com",
+    "project_id": "please-f96e5",
+    "storage_bucket": "please-f96e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415379176174:android:4265c0aea706e340",
+        "android_client_info": {
+          "package_name": "com.dodream.firebaseTest.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415379176174-adb8vqd80h063lrb43ggq3g8rf1urggv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNE08z-XQfqCtIRdGbIG0nqKsbSwF5M3k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415379176174:android:d397f5f707d70b1c",
+        "android_client_info": {
+          "package_name": "yaksok.dodream.com.yaksok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415379176174-adb8vqd80h063lrb43ggq3g8rf1urggv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNE08z-XQfqCtIRdGbIG0nqKsbSwF5M3k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
